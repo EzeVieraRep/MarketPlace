@@ -1,26 +1,27 @@
 import React from 'react'
 import TarjetaProducto from './Product-card'
+import './Productos.css'
 
 const Tarjeta1 = {
   id: 1,
   nombre: 'Tarjeta 1',
   precio: 1000,
   cantidad: 1,
-  imagen: 'https://www.tarjetas.com/wp-content/uploads/2019/05/tarjeta-1.jpg'
+  imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Frockcontent.com%2Fes%2Fblog%2Fproducto-en-el-marketing%2F&psig=AOvVaw0T8LXhgGk25DiO4pUXvt95&ust=1681427463677000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjcxMe7pf4CFQAAAAAdAAAAABAE'
 }
 const Tarjeta2 = {
   id: 2,
   nombre: 'Tarjeta 2',
   precio: 2000,
   cantidad: 2,
-  imagen: 'https://www.tarjetas.com/wp-content/uploads/2019/05/tarjeta-2.jpg'
+  imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iep.edu.es%2Fque-es-una-estrategia-de-producto-claves%2F&psig=AOvVaw0T8LXhgGk25DiO4pUXvt95&ust=1681427463677000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjcxMe7pf4CFQAAAAAdAAAAABAS'
 }
 const Tarjeta3 = {
   id: 3,
   nombre: 'Tarjeta 3',
   precio: 3000,
   cantidad: 3,
-  imagen: 'https://www.tarjetas.com/wp-content/uploads/2019/05/tarjeta-3.jpg'
+  imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.microtech.es%2Fblog%2Fc%25C3%25B3mo-limpiar-tu-stock-de-productos-que-no-se-han-vendido&psig=AOvVaw0T8LXhgGk25DiO4pUXvt95&ust=1681427463677000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjcxMe7pf4CFQAAAAAdAAAAABAc'
 }
 const arrayProductos = [Tarjeta1,Tarjeta2,Tarjeta3]
 
