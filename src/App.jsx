@@ -1,14 +1,15 @@
-import { useState } from 'react'
 import './App.css'
 import Listaproductos from './components/Listaproductos'
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Hola</h1>
-      <Listaproductos />
-    </div>
+    <>
+      <Router>
+        <Listaproductos />
+      </Router>
+    </>
   )
 }
 
