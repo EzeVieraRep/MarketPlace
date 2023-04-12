@@ -1,5 +1,5 @@
 import React from 'react'
-import TarjetaProducto from './product-card'
+import TarjetaProducto from './Product-card'
 
 const Tarjeta1 = {
   id: 1,
@@ -27,7 +27,7 @@ const arrayProductos = [Tarjeta1,Tarjeta2,Tarjeta3]
 const Listaproductos = () => {
 
   return (
-    <div>
+    <div className='ContainerProductos'>
     {arrayProductos.map((producto)=>{
       return <TarjetaProducto key={producto.id} nombre={producto.nombre} precio={producto.precio} cantidad={producto.cantidad} imagen={producto.imagen} />
     })}

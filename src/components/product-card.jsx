@@ -1,11 +1,12 @@
 import React from 'react'
+import "./components.css"
 
 const TarjetaProducto = ({nombre, precio, cantidad, imagen}) => {
 
 
   return (
 
-    <div>
+    <div className='ContainerTarjeta'>
     <h2> Tarjeta Producto</h2>
     <img src={imagen} alt={nombre} />
     <p>Nombre: {nombre}</p>
