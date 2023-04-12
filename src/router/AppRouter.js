@@ -1,4 +1,3 @@
-import Listaproductos from './components/Listaproductos'
 
 const AppRuter = () => {
     return ( 
