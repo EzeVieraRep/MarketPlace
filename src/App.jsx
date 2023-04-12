@@ -1,13 +1,13 @@
 import './App.css'
-import Listaproductos from './components/Listaproductos'
 import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from './router/AppRouter';
 
 function App() {
 
   return (
     <>
       <Router>
-        <Listaproductos />
+        <AppRouter />
       </Router>
     </>
   )
