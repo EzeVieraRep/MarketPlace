@@ -1,6 +1,5 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import './login.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -37,7 +36,7 @@ const Login = () => {
         <div className="container">
             <form className="form" onSubmit={onSubmit}>
                 <div className="avatar_Container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                     </svg>
@@ -62,10 +61,10 @@ const Login = () => {
                 </div>
                 <div className="link_container">
                     <Link to="#" className="link">
-                        te olvidaste la contraseña?
+                       Se te olvidaste la contraseña?
                     </Link>
                     <Link to={"/nueva-cuenta"} className="link">
-                        {"no tienes cuenta? Registrate"}
+                        {"no tienes cuenta?"}
                     </Link>
                 </div>
             </form>
