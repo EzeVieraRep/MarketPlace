@@ -1,0 +1,45 @@
+/* reutilozo codigo css */
+.avatar_Container, .textField_container, .container, .button_container{
+    display: flex;
+    justify-content: center;
+}
+/* contenedor procipal */
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.form {
+    width: 30%;
+    min-width: 350px;
+    background-color: #E2E8E7;
+    height: 65%;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+.avatar_Container {
+    margin-top: 30px;
+}
+.avatar {
+    font-size: 60px !important;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.textField_container {
+    margin-bottom: 40px;
+}
+
+.link_container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px 0 10px;
+}
+
+.link {
+    font-size: 13px;
+}
