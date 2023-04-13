@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Productos.css"
+import {Button, Badge} from 'react-bootstrap';
 
 const TarjetaProducto = ({nombre, precio, cantidad, imagen}) => {
 
@@ -9,12 +10,18 @@ const TarjetaProducto = ({nombre, precio, cantidad, imagen}) => {
     <div className='ContainerTarjeta'>
     <img className='imagencard' src={imagen} alt={nombre} />
     <div className='infocard'>
-    <h5>Nombre: {nombre}</h5>
-    <h5>Precio: {precio}</h5>
-    <h5>Cantidad: {cantidad}</h5>
+    <p><i>Nombre:</i> {nombre}</p>
+    <p><i>Precio:</i> {precio}</p>
+    <p><i>Cantidad:</i> {cantidad}</p>
     </div>
-    <button>Info</button>
-    <button>Contactar</button>
+    <div className='BotonesCard'>
+    <Badge bg="info" as="Button">
+      Info
+    </Badge>
+    <Badge bg="secondary" as="Button">
+      Contactar
+    </Badge>
+    </div>
     </div>
   )
 }

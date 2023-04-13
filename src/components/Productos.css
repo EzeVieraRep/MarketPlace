@@ -19,4 +19,17 @@
 .infocard{
     justify-content: center;
     gap: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.BotonesCard{
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.imagencard{
+    box-shadow: 0px 5px 10px black;
+    border-radius: 3px;
+    margin-bottom: 1rem;;
 }
