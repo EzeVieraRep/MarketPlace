@@ -1,5 +1,5 @@
 import { Button, Form } from "react-bootstrap";
-import './signUp.css'
+import '../signUp.css'
 const SignUp = () => {
     return (
         <div className='conteiner'>
@@ -37,7 +37,7 @@ const SignUp = () => {
                     </Button>
                 </div>
 
-                <h3>OR</h3>
+                <p>OR</p>
 
                 
             </form>

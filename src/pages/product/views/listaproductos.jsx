@@ -1,6 +1,6 @@
 import React from 'react'
-import TarjetaProducto from './Product-card'
-import './Productos.css'
+import TarjetaProducto from './product-card'
+import '../Productos.css'
 
 const Tarjeta1 = {
   id: 1,

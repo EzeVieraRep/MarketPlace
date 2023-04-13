@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Listaproductos from "../components/listaproductos.jsx"
-import Login from "../components/Login.jsx";
-import SignUp from "../components/signUp.jsx";
+import Listaproductos from "../pages/product/views/listaproductos"
+import Login from "../pages/login/views/Login";
+import SignUp from "../pages/login/views/SignUp";
 
 const AppRouter = () => {
     return (
