@@ -23,7 +23,18 @@ const Tarjeta3 = {
   cantidad: 3,
   imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.microtech.es%2Fblog%2Fc%25C3%25B3mo-limpiar-tu-stock-de-productos-que-no-se-han-vendido&psig=AOvVaw0T8LXhgGk25DiO4pUXvt95&ust=1681427463677000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjcxMe7pf4CFQAAAAAdAAAAABAc'
 }
-const arrayProductos = [Tarjeta1,Tarjeta2,Tarjeta3]
+const Tarjeta4 = {
+  id: 4,
+  nombre: 'Tarjeta 4',
+  precio: 4000,
+  cantidad: 4,
+  imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.microtech.es%2Fblog%2Fc%25C3%25B3mo-limpiar-tu-stock-de-productos-que-no-se-han-vendido&psig=AOvVaw0T8LXhgGk25DiO4pUXvt95&ust=1681427463677000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjcxMe7pf4CFQAAAAAdAAAAABAc'
+}
+
+
+
+
+const arrayProductos = [Tarjeta1,Tarjeta2,Tarjeta3,Tarjeta4]
 
 const Listaproductos = () => {
 

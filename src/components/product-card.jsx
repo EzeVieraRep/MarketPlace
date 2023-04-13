@@ -8,9 +8,11 @@ const TarjetaProducto = ({nombre, precio, cantidad, imagen}) => {
 
     <div className='ContainerTarjeta'>
     <img className='imagencard' src={imagen} alt={nombre} />
-    <p>Nombre: {nombre}</p>
-    <p>Precio: {precio}</p>
-    <p>Cantidad: {cantidad}</p>
+    <div className='infocard'>
+    <h5>Nombre: {nombre}</h5>
+    <h5>Precio: {precio}</h5>
+    <h5>Cantidad: {cantidad}</h5>
+    </div>
     <button>Info</button>
     <button>Contactar</button>
     </div>
