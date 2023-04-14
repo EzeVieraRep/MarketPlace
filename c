@@ -1,0 +1,22 @@
+[33m96a97f7[m[33m ([m[1;36mHEAD -> [m[1;32mDevelopers[m[33m)[m HEAD@{0}: commit: conecto login en el header
+[33m9426db6[m HEAD@{1}: pull: Fast-forward
+[33mac6431f[m HEAD@{2}: commit: se separo la logica de signup
+[33mb5e8068[m HEAD@{3}: commit: se separo la logica de Login
+[33mbd03c38[m HEAD@{4}: commit: se modificaron los estilos y se agrego la logica de SignUp
+[33m8a73f1a[m HEAD@{5}: commit: cambio en la estructura de la App
+[33m21f19d9[m HEAD@{6}: commit: se empezo a implementar logjn
+[33m7b6cf77[m HEAD@{7}: commit: se instalo boostrap icon y se implemento en login
+[33m1659d75[m HEAD@{8}: commit: implementacion de login
+[33m2ff0f2b[m HEAD@{9}: pull: Fast-forward
+[33ma335c6c[m HEAD@{10}: pull: Merge made by the 'recursive' strategy.
+[33md296caf[m HEAD@{11}: commit: se instalo boostrap
+[33m3307d62[m HEAD@{12}: commit: se agrego react router dom y se configuro el App
+[33m1d42861[m HEAD@{13}: commit: se agrego react router dom y se configuro el App
+[33m57efdef[m HEAD@{14}: commit: se agrego react router dom y se configuro el App
+[33mf0a1df9[m HEAD@{15}: commit: se agrego react router dom y se configuro el App
+[33m92af84b[m HEAD@{16}: pull: Fast-forward
+[33m6263bba[m HEAD@{17}: checkout: moving from 6263bbac8b2d7e4966505af7060983ae0a5f0eb6 to Developers
+[33m6263bba[m HEAD@{18}: checkout: moving from Developers to origin/Developers
+[33m6263bba[m HEAD@{19}: checkout: moving from Developers to Developers
+[33m6263bba[m HEAD@{20}: checkout: moving from main to Developers
+[33m180c8ae[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{21}: clone: from https://github.com/EzeVieraRep/MarketPlace.git

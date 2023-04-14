@@ -7,14 +7,14 @@ const Tarjeta1 = {
   nombre: 'Tarjeta 1',
   precio: 1000,
   cantidad: 1,
-  imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Frockcontent.com%2Fes%2Fblog%2Fproducto-en-el-marketing%2F&psig=AOvVaw0T8LXhgGk25DiO4pUXvt95&ust=1681427463677000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjcxMe7pf4CFQAAAAAdAAAAABAE'
+  imagen: '/src/pages/product/flores.jpg'
 }
 const Tarjeta2 = {
   id: 2,
   nombre: 'Tarjeta 2',
   precio: 2000,
   cantidad: 2,
-  imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iep.edu.es%2Fque-es-una-estrategia-de-producto-claves%2F&psig=AOvVaw0T8LXhgGk25DiO4pUXvt95&ust=1681427463677000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjcxMe7pf4CFQAAAAAdAAAAABAS'
+  imagen: '/src/pages/product/flores.jpg'
 }
 const Tarjeta3 = {
   id: 3,
