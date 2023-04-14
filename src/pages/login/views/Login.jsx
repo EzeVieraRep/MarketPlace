@@ -1,10 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import '../login.css'
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = ({loginButtonDisabled, changeInput, onSubmit, email, password,}) => {
+const Login = ({loginButtonDisabled, changeInput, onSubmit}) => {
    
     return (
         <div className="container">

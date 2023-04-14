@@ -28,7 +28,7 @@ const useLogin = () => {
     };
 
     return (
-        <Login loginButtonDisabled={loginButtonDisabled} changeInput={changeInput} onSubmit={onSubmit} email={email} password={password} />
+        <Login loginButtonDisabled={loginButtonDisabled} changeInput={changeInput} onSubmit={onSubmit} />
     );
 }
 

@@ -1,30 +1,7 @@
 import { Button, Form } from "react-bootstrap";
 import '../signUp.css'
 import { Link } from "react-router-dom";
-import { useState } from "react";
-const SignUp = () => {
-    const [user, setUser] = useState({
-        email: "",
-        password: "",
-        confirmPassword: ""
-    })
-
-    const changeInput = (e) => {
-        setUser({
-            ...user,
-            [e.target.name]: e.target.value
-        })
-    }
-    const onSubmit = (e) => {
-        e.preventDefault();
-
-    };
-
-    const signUpButtonDisabled = () => isEmpty(email) || isEmpty(password) || isEmpty(confirmPassword)
-
-    const isEmpty = (aField) => aField === "";
-
-    const { email, password, confirmPassword } = user
+const SignUp = ({changeInput, onSubmit, signUpButtonDisabled, email, password, confirmPassword}) => {
 
     return (
         <div className='conteiner'>
