@@ -7,6 +7,7 @@ const TarjetaProducto = ({ nombre, precio, cantidad, imagen }) => {
   return (
 
     <div className='ContainerTarjeta'>
+
       <img className='imagencard' src={imagen} alt={nombre} />
       <div className='infocard'>
         <p><i>Nombre:</i> {nombre}</p>
