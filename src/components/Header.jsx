@@ -14,8 +14,9 @@ function Header() {
             <Nav.Link href="#">Productos</Nav.Link>
           </Nav>
           <Nav>
-          <Nav.Link href="#">Iniciar Sesion</Nav.Link>
-          <Nav.Link href="#">Registrarse</Nav.Link>
+          <Nav.Link href="/login">Iniciar Sesion</Nav.Link>
+          <Nav.Link href="/nueva-cuenta">Registrarse</Nav.Link>
+          
           </Nav>
       </Container>
       </Navbar>
