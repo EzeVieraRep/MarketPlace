@@ -4,32 +4,8 @@ import '../login.css'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
-    // hook de user
-    const [user, setUser] = useState({
-        email: "",
-        password: "",
-    });
-
-    // destroyoning del hook user
-    const { email, password } = user;
-
-    const isEmpty = (aField) => aField === "";
-
-    const loginButtonDisabled = () => isEmpty(email) || isEmpty(password);
-
-    const changeInput = (e) => {
-        setUser({
-            ...user,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    const onSubmit = (e) => {
-        e.preventDefault();
-
-    };
-
+const Login = ({loginButtonDisabled, changeInput, onSubmit, email, password,}) => {
+   
     return (
         <div className="container">
             <form className="form" onSubmit={onSubmit}>
@@ -45,13 +21,13 @@ const Login = () => {
                 <div className="textField_container">
                     <Form.Group className="mb-3">
                         <Form.Label>email</Form.Label>
-                        <Form.Control type='email' placeholder="ingrese el email" name="email" onChange={changeInput} />
+                        <Form.Control type='email' placeholder="ingrese el email" name="email" onChange={changeInput} autoComplete="username"/>
                     </Form.Group>
                 </div>
                 <div className="textField_container">
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" name='password' placeholder="Password" onChange={changeInput} />
+                        <Form.Control type="password" name='password' placeholder="Password" onChange={changeInput} autoComplete="current-password" />
                     </Form.Group>
                 </div>
                 <div className="button_container">
