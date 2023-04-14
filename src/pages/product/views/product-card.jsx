@@ -15,12 +15,8 @@ const TarjetaProducto = ({nombre, precio, cantidad, imagen}) => {
     <p><i>Cantidad:</i> {cantidad}</p>
     </div>
     <div className='BotonesCard'>
-    <Badge bg="info" as="Button">
-      Info
-    </Badge>
-    <Badge bg="secondary" as="Button">
-      Contactar
-    </Badge>
+    <Button variant="outline-info p-1 m-1" size='sm'>Info</Button>
+    <Button variant="outline-secondary" size='sm'>Contactar</Button>
     </div>
     </div>
   )

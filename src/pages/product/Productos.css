@@ -25,6 +25,7 @@
 
 .BotonesCard{
     display: inline-block;
+    gap: 10px;
     padding-bottom: 1rem;
 }
 

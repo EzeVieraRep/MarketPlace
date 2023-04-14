@@ -5,7 +5,7 @@ import "./Header.css"
 
 function Header() {
   return (
-    <Navbar bg="primary" variant="dark" className='navbarNew'>
+    <Navbar bg="light" variant="light" className='navbarNew'>
       <Container>
       <img src='../img/5087847.png' alt='carrito'></img>
           <Navbar.Brand href="#">MarketPlace</Navbar.Brand>
