@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Productos.css"
+import "../Productos.css"
 import {Button, Badge} from 'react-bootstrap';
 
 const TarjetaProducto = ({nombre, precio, cantidad, imagen}) => {

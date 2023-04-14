@@ -9,12 +9,13 @@
     height: 100vh;
 }
 .form {
-    width: 30%;
+    width: 20%;
     min-width: 350px;
     background-color: #E2E8E7;
-    height: 65%;
+    height: 70%;
     margin-top: 5rem;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .avatar_Container {
     margin-top: 30px;
@@ -29,15 +30,11 @@
     margin-bottom: 30px;
 }
 
-.textField_container {
-    margin-bottom: 40px;
-}
-
 .link_container {
     width: 95%;
     display: flex;
     margin-top: 20px;
-    gap: 30px;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
 }
