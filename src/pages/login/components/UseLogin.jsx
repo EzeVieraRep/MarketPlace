@@ -76,10 +76,9 @@ const useLogin = () => {
         }
     }, [])
 
-    return (
-        <Login open={open} loginButtonDisabled={loginButtonDisabled} changeInput={changeInput} onSubmit={onSubmit} msg={msg}
+    return <Login open={open} loginButtonDisabled={loginButtonDisabled} changeInput={changeInput} onSubmit={onSubmit} msg={msg}
             colorSnackbar={colorSnackbar} />
-    );
+    
 }
 
 export default useLogin;
