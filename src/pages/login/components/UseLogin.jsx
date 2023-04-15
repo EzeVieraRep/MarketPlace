@@ -18,6 +18,9 @@ const useLogin = () => {
     });
 
     const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [msg, setMsg] = useState("")
+    const [colorSnackbar, setColorSnackbar] = useState("")
+    const [open, setOpen] = useState(true)
     // destroyoning del hook user
     const { email, password } = user;
 
@@ -35,7 +38,7 @@ const useLogin = () => {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        login( email, password)
+        login(email, password)
     };
 
     // esto tiene que ir en un context
@@ -44,16 +47,26 @@ const useLogin = () => {
             if (USER.password === password) {
                 setIsLoggedIn(true);
                 localStorage.setItem('isLoggedIn', true);
+                setMsg("se a logeado con exito")
+                setColorSnackbar("success");
                 navigate("/")
             } else {
-                console.log("la contraseña esta mal")
+                setMsg("la contraseña esta mal")
+                setColorSnackbar("Danger");
                 localStorage.setItem('isLoggedIn', false);
+
             }
 
         } else {
-            console.log("el email esta mal")
+            setMsg("el email esta mal")
+            setColorSnackbar("Danger");
             localStorage.setItem('isLoggedIn', false);
         }
+        setOpen(true)
+        setTimeout(() => {
+        setOpen(false)
+            
+        }, 5000);
     }
 
 
@@ -64,7 +77,8 @@ const useLogin = () => {
     }, [])
 
     return (
-        <Login loginButtonDisabled={loginButtonDisabled} changeInput={changeInput} onSubmit={onSubmit} />
+        <Login open={open} loginButtonDisabled={loginButtonDisabled} changeInput={changeInput} onSubmit={onSubmit} msg={msg}
+            colorSnackbar={colorSnackbar} />
     );
 }
 

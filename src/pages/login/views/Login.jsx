@@ -2,9 +2,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import '../login.css'
 import { Link } from 'react-router-dom';
+import UseSnackbar from '../../../snackbar/components/useSnackbar';
 
-const Login = ({loginButtonDisabled, changeInput, onSubmit}) => {
-   
+const Login = ({ open, loginButtonDisabled, changeInput, onSubmit, msg, colorSnackbar }) => {
+
     return (
         <div className="containerLogin">
             <form className="form" onSubmit={onSubmit}>
@@ -20,7 +21,7 @@ const Login = ({loginButtonDisabled, changeInput, onSubmit}) => {
                 <div className="textField_container">
                     <Form.Group className="mb-3">
                         <Form.Label>email</Form.Label>
-                        <Form.Control type='email' placeholder="ingrese el email" name="email" onChange={changeInput} autoComplete="username"/>
+                        <Form.Control type='email' placeholder="ingrese el email" name="email" onChange={changeInput} autoComplete="username" />
                     </Form.Group>
                 </div>
                 <div className="textField_container">
@@ -40,6 +41,7 @@ const Login = ({loginButtonDisabled, changeInput, onSubmit}) => {
                         registrate
                     </Link></p>
                 </div>
+                {open && <UseSnackbar msg={msg} colorSnackbar={colorSnackbar} />}
             </form>
         </div>
     );
