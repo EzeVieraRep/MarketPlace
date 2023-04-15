@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NavbarLogged from '../components/NavbarLogged';
 import NavbarReg from '../components/NavbarReg';
 
+const ONLINE = localStorage.getItem('isLoggedIn')
+
 function Header() {
-const [isLogged, setLoggedState] = useState(false)
+const [isLogged, setLoggedState] = useState(ONLINE)
 
-
-  return (
-    !isLogged ? <NavbarReg /> : <NavbarLogged />
-  );
+  if (isLogged === true) {
+    return <NavbarLogged />
+  } else return <NavbarReg />
 }
+
 
 export default Header;
