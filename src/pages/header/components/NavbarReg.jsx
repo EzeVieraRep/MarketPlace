@@ -5,12 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import "../Header.css"
 import { useState } from 'react';
 
+const carrito = "src/pages/header/views/img/5087847.png"
+
 const NavbarReg = () => {
 
   return (
     <Navbar bg="light" variant="light" className='navbarNew'>
       <Container>
-      <img src="../views/img/5087847.png" alt='carrito' crossOrigin="Anonymous"></img>
+      <img src={carrito} className='logoNavbar' alt='carrito' crossOrigin="Anonymous"></img>
           <Navbar.Brand href="#">MarketPlace</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#">Inicio</Nav.Link>

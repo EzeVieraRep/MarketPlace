@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Login = ({loginButtonDisabled, changeInput, onSubmit}) => {
    
     return (
-        <div className="container">
+        <div className="containerLogin">
             <form className="form" onSubmit={onSubmit}>
                 <div className="avatar_Container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
