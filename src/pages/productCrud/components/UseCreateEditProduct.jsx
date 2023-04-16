@@ -12,7 +12,13 @@ const UseCreateEditProduct = () => {
 
     const imageChange = (e) => setImages(images.concat(e.target.files[0]));
 
-    return <CreateEditProduct images={images} selectImage={selectImage} selectedImage={selectedImage} imageChange={imageChange}/>
+    const isEmpty = (aField) => aField === "";
+
+    //desabilita el boton de eliminar Imagen 
+    const imageButtonDisabled = () => isEmpty(selectedImage)
+
+
+    return <CreateEditProduct images={images} selectImage={selectImage} selectedImage={selectedImage} imageChange={imageChange} imageButtonDisabled={imageButtonDisabled} />
 }
 
 export default UseCreateEditProduct;

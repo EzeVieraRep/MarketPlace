@@ -1,7 +1,7 @@
 import { Button, Form } from "react-bootstrap";
 import '../Styles.css'
 
-const CreateEditProduct = ({ images, selectImage, selectedImage, imageChange }) => {
+const CreateEditProduct = ({ images, selectImage, selectedImage, imageChange, imageButtonDisabled }) => {
     return (
         <div className="product_container">
             <div className="product_card">
@@ -74,7 +74,7 @@ const CreateEditProduct = ({ images, selectImage, selectedImage, imageChange }) 
                     </div>
                     {/* ELIMINAR IMAGEN */}
                     <div className="product_item">
-                        <Button variant="primary">Eliminar</Button>
+                        <Button variant={!imageButtonDisabled() ? "primary" : "secondary"} disabled={imageButtonDisabled()} >Eliminar</Button>
                     </div>
                 </form>
             </div >
