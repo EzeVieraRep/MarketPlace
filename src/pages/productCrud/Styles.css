@@ -58,3 +58,12 @@
 .product_select_image{
     opacity: 0.3;
 }
+
+.title {
+    width: 85%;
+    background: rgb(83, 147, 201);
+    background: linear-gradient(90deg, rgba(83, 147, 201, 1) 32%, rgba(180, 198, 159, 1) 63%);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}

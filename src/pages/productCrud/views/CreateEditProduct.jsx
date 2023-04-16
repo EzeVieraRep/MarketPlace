@@ -4,8 +4,10 @@ import '../Styles.css'
 const CreateEditProduct = ({ images, selectImage, selectedImage, imageChange, imageButtonDisabled }) => {
     return (
         <div className="product_container">
-            <div className="product_card">
+            <div className="title">
                 <h1>Agregar Producto</h1>
+            </div>
+            <div className="product_card">
                 <form className="product_form">
                     {/* NOMBRE */}
                     <div className="product_item">
@@ -51,7 +53,7 @@ const CreateEditProduct = ({ images, selectImage, selectedImage, imageChange, im
                         <Form.Group controlId="formFile" className="mb-3" onChange={imageChange}>
                             <Form.Control type="file" />
                         </Form.Group>
-                        
+
                     </div>
                     {/* IMAGEN PREVIA */}
                     <div className="product_item_col2">
@@ -77,7 +79,7 @@ const CreateEditProduct = ({ images, selectImage, selectedImage, imageChange, im
                         <Button variant={!imageButtonDisabled() ? "primary" : "secondary"} disabled={imageButtonDisabled()} >Eliminar</Button>
                     </div>
                 </form>
-            </div >
+            </div>
         </div >
     );
 }
