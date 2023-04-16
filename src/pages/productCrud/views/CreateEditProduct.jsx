@@ -78,6 +78,12 @@ const CreateEditProduct = ({ images, selectImage, selectedImage, imageChange, im
                     <div className="product_item">
                         <Button variant={!imageButtonDisabled() ? "primary" : "secondary"} disabled={imageButtonDisabled()} >Eliminar</Button>
                     </div>
+                    {/* BOTON AGREGAR PRODUCTO */}
+                    <div className="product_item_col4">
+                        <Button variant="primary" type="submit" >
+                            Agregar Producto
+                        </Button>
+                    </div>
                 </form>
             </div>
         </div >
