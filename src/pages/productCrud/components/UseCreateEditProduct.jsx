@@ -17,8 +17,10 @@ const UseCreateEditProduct = () => {
     //desabilita el boton de eliminar Imagen 
     const imageButtonDisabled = () => isEmpty(selectedImage)
 
+    const deleteImage = () => setImages(images.filter(image => image !== selectedImage))
 
-    return <CreateEditProduct images={images} selectImage={selectImage} selectedImage={selectedImage} imageChange={imageChange} imageButtonDisabled={imageButtonDisabled} />
+
+    return <CreateEditProduct deleteImage={deleteImage} images={images} selectImage={selectImage} selectedImage={selectedImage} imageChange={imageChange} imageButtonDisabled={imageButtonDisabled} />
 }
 
 export default UseCreateEditProduct;

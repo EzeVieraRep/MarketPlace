@@ -31,6 +31,9 @@
     justify-content: center;
 }
 
+.mb-3 {
+    width: 100%;
+}
 .product_item_col2 {
     width: 50%;
 }
@@ -50,6 +53,7 @@
     justify-content: center;
 }
 .addEdditProduct_img {
+    cursor: pointer;
     width: 100%;
     max-width: 150px;
     height: 100px;
