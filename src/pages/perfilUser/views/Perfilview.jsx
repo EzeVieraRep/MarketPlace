@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import "../userPerfil.css"
+import { DisplayProduct } from '../components/DisplayProduct';
 
 const DATOS_USUARIO = {
     usuario: "Javier",
@@ -16,8 +17,12 @@ const Perfilview = () => {
         <img className='imagenPerfil' src={DATOS_USUARIO.imagen} alt='fotoperfil'></img>
         <h4><i>Nombre de usuario: </i> {DATOS_USUARIO.usuario}</h4>
         <h4><i>Email: </i> {DATOS_USUARIO.email}</h4>
-
-
+    </div>
+    <div className='textoConector'>
+    <h3 className='Conector'>Mis Productos:</h3>
+    </div>
+    <div className='VisorProductos'>
+        <DisplayProduct />
     </div>
 
     </div>
