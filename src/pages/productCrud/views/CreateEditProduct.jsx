@@ -1,7 +1,8 @@
 import { Button, Form } from "react-bootstrap";
 import '../Styles.css'
 
-const CreateEditProduct = ({deleteImage, images, selectImage, selectedImage, imageChange, imageButtonDisabled }) => {
+const CreateEditProduct = ({ name, price, descripcion, stock, productChange, deleteImage, images,
+    selectImage, selectedImage, imageChange, imageButtonDisabled }) => {
     return (
         <div className="product_container">
             <div className="title">
@@ -13,28 +14,28 @@ const CreateEditProduct = ({deleteImage, images, selectImage, selectedImage, ima
                     <div className="product_item">
                         <Form.Group className="mb-3">
                             <Form.Label>Nombre</Form.Label>
-                            <Form.Control type="text" placeholder="ingrese el nombre del producto" name="name" />
+                            <Form.Control type="text" placeholder="ingrese el nombre del producto" name="name" onChange={productChange} value={name}/>
                         </Form.Group>
                     </div>
                     {/* PRECIO */}
                     <div className="product_item">
                         <Form.Group className="mb-3">
                             <Form.Label>precio</Form.Label>
-                            <Form.Control type="number" placeholder="ingrese el precio  del producto" name="price" />
+                            <Form.Control type="number" placeholder="ingrese el precio  del producto" name="price" onChange={productChange} value={price}/>
                         </Form.Group>
                     </div>
                     {/* DESCRIPCION */}
                     <div className="product_item">
                         <Form.Group className="mb-3">
                             <Form.Label>Descripcion</Form.Label>
-                            <Form.Control type="text" placeholder="ingrese la descripcion del producto" name="descripcion" />
+                            <Form.Control type="text" placeholder="ingrese la descripcion del producto" name="descripcion" onChange={productChange} value={descripcion}/>
                         </Form.Group>
                     </div>
                     {/* STOCK */}
                     <div className="product_item">
                         <Form.Group className="mb-3">
                             <Form.Label>Stock</Form.Label>
-                            <Form.Control type="number" placeholder="ingrese el stck del producto" name="stock" />
+                            <Form.Control type="number" placeholder="ingrese el stck del producto" name="stock" onChange={productChange} value={stock} />
                         </Form.Group>
                     </div>
                     {/* CATEGORIA */}
@@ -86,7 +87,7 @@ const CreateEditProduct = ({deleteImage, images, selectImage, selectedImage, ima
                     </div>
                 </form>
             </div>
-        </div >
+        </div>
     );
 }
 

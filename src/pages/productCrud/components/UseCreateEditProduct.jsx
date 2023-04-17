@@ -3,6 +3,18 @@ import CreateEditProduct from "../views/CreateEditProduct";
 
 const UseCreateEditProduct = () => {
 
+    // hook de productNew se usa inicializa las propiedades
+    const [productNew, setProductNew] = useState({
+        name: "",
+        price: 0,
+        descripcion: "",
+        stock: 0,
+        category: null,
+    });
+
+    const { name, price, descripcion, category, checkedOffer, originalPrice, stock } = productNew;
+
+
     //hook de imagen seleccionada 
     const [selectedImage, setSelectedImage] = useState("")
     const [images, setImages] = useState([])
@@ -19,8 +31,14 @@ const UseCreateEditProduct = () => {
 
     const deleteImage = () => setImages(images.filter(image => image !== selectedImage))
 
-
-    return <CreateEditProduct deleteImage={deleteImage} images={images} selectImage={selectImage} selectedImage={selectedImage} imageChange={imageChange} imageButtonDisabled={imageButtonDisabled} />
+    // guarda en el hooks de productNew los campos
+    const productChange = (e) => {
+        setProductNew({
+            ...productNew,
+            [e.target.name]: e.target.value,
+        });
+    };
+    return <CreateEditProduct name={name} price={price} descripcion={descripcion} stock={stock} category={category} productChange={productChange} deleteImage={deleteImage} images={images} selectImage={selectImage} selectedImage={selectedImage} imageChange={imageChange} imageButtonDisabled={imageButtonDisabled} />
 }
 
 export default UseCreateEditProduct;
