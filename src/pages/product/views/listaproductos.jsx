@@ -1,6 +1,7 @@
-import React from 'react'
+import {useState} from 'react'
 import TarjetaProducto from './product-card'
 import '../Productos.css'
+import { Button } from 'react-bootstrap';
 
 const Tarjeta1 = {
   id: 1,
@@ -32,17 +33,35 @@ const Tarjeta4 = {
 }
 
 
-
-
 const arrayProductos = [Tarjeta1,Tarjeta2,Tarjeta3,Tarjeta4]
 
 const Listaproductos = () => {
 
-  return (
+  const ONLINE = localStorage.getItem('isLoggedIn')
+
+  const [Conectado, setConectado] = useState(ONLINE)
+
+
+  if (Conectado === false)
+return (
+    <div className='Global'>
     <div className='ContainerProductos'>
     {arrayProductos.map((producto)=>{
       return <TarjetaProducto key={producto.id} nombre={producto.nombre} precio={producto.precio} cantidad={producto.cantidad} imagen={producto.imagen} />
     })}
+    </div>
+    </div>
+  )
+  else return(
+    <div className='Global'>
+    <div className='Contboton'>
+    <Button className='BotonAgregar' variant='outline-primary' href="/agregar-producto" size='sm'> 🗹 Agregar Producto</Button>
+    </div>
+    <div className='ContainerProductos'>
+    {arrayProductos.map((producto)=>{
+      return <TarjetaProducto key={producto.id} nombre={producto.nombre} precio={producto.precio} cantidad={producto.cantidad} imagen={producto.imagen} />
+    })}
+    </div>
     </div>
   )
 }

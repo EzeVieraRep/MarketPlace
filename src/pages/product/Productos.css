@@ -38,3 +38,13 @@
     max-width: 150px;
     height: 100px;
 }
+
+.BotonAgregar {
+ margin-top: 1rem;
+ margin-right: 1rem;
+}
+
+.Contboton{
+display: flex;
+justify-content: end;
+}
