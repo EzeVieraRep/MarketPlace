@@ -19,7 +19,7 @@ const NavbarLogged = () => {
             <Nav.Link href="/">Productos</Nav.Link>
           </Nav>
           <Nav>
-          <Nav.Link href="#"><img src='src/pages/header/views/img/585e4beacb11b227491c3399.png' alt='logoUsuario' className="logoUsuario" crossOrigin='Anonymous'></img>Perfil de Usuario</Nav.Link>
+          <Nav.Link href="/perfil-usuario"><img src='src/pages/header/views/img/585e4beacb11b227491c3399.png' alt='logoUsuario' className="logoUsuario" crossOrigin='Anonymous'></img>Perfil de Usuario</Nav.Link>
           </Nav>
           </Container>
       </Navbar>

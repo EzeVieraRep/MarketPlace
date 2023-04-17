@@ -1,0 +1,29 @@
+.Principal{
+    display: flex;
+    justify-content: center;
+}
+
+.ContenedorPerfil{
+    box-shadow: 0 3px 7px grey;
+    border-radius: 2%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color:lightgray;
+    width: 40rem;
+    height: 40rem;
+}
+
+.DatosUsuario{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.imagenPerfil{
+    height: 100px;
+    width: 100px;
+    margin-top: 2rem;
+}
