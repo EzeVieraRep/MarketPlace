@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import Login from '../views/Login'
 import { useNavigate } from 'react-router-dom';
 
-
-
 const USER = {
     username: "admin@admin.com",
     password: "admin"
