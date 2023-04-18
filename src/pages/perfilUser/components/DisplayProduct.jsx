@@ -41,7 +41,7 @@ export const DisplayProduct = () => {
     <div className='ContenedorProductos'>
 
      {ARRAY_PRODUCTOS.map((productos) =>{
-        return <ProductoUsuario id={productos.id} nombre={productos.nombre} precio={productos.precio} cantidad={productos.cantidad} imagen={productos.imagen} />
+        return <ProductoUsuario key={productos.id} id={productos.id} nombre={productos.nombre} precio={productos.precio} cantidad={productos.cantidad} imagen={productos.imagen} />
      })}
 
     </div>

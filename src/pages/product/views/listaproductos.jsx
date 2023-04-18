@@ -32,7 +32,6 @@ const Tarjeta4 = {
   imagen: '/src/pages/product/flores.jpg'
 }
 
-
 const arrayProductos = [Tarjeta1,Tarjeta2,Tarjeta3,Tarjeta4]
 
 const Listaproductos = () => {
