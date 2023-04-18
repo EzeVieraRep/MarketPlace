@@ -1,5 +1,5 @@
-const config = require('config');
+import { config } from 'dotenv'
 config()
-const mongodbURL = process.env.DB_MONGO
-
-module.exports = mongodbURL
+export default {
+    mongodbURL: process.env.DB_MONGO
+}
