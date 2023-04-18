@@ -7,9 +7,14 @@ const ONLINE = localStorage.getItem('isLoggedIn')
 function Header() {
 const [isLogged, setLoggedState] = useState(ONLINE)
 
-  if (isLogged === true) {
-    return <NavbarLogged />
-  } else return <NavbarReg />
+useEffect(()=> {
+setLoggedState(ONLINE)
+console.log(isLogged)
+}, [])
+
+if (isLogged) {
+  return <NavbarLogged />
+} else return <NavbarReg />
 }
 
 
