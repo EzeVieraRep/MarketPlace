@@ -1,18 +1,16 @@
-const express = require('express');
-const morgan = require('morgan');
-const cors = require('cors');
+import cors from 'cors'
+import morgan from "morgan"
+import express from "express"
 
-
-const app = express();
+const app = express()
 
 app.use(cors())
-app.set("port", 3000);
-app.use(morgan("dev"));
+app.set("port", 4000)
+app.use(morgan("dev"))
 
+// habilitar express.json
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-const PORT = process.env.PORT || 4000
-
-
-module.exports = app;
+ 
+export default app
