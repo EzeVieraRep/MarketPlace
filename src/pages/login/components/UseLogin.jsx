@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Login from '../views/Login'
 import { useNavigate } from 'react-router-dom';
+import ServiceLogin from '../../../services/ServiceLogin'
 
 const USER = {
     username: "admin@admin.com",
@@ -8,6 +9,7 @@ const USER = {
 }
 const useLogin = () => {
     const navigate = useNavigate();
+    const service = new ServiceLogin()
 
     // hook de user
     const [user, setUser] = useState({
@@ -33,10 +35,14 @@ const useLogin = () => {
         });
     };
 
-    const onSubmit = (e) => {
+    const onSubmit = async(e) => {
         e.preventDefault();
-
-        login(email, password)
+        try {
+            const response =await service.login({ email, password })
+            console.log(response);
+        } catch (error) {
+            console.log(error)
+        }
     };
 
     // esto tiene que ir en un context
@@ -62,8 +68,8 @@ const useLogin = () => {
         }
         setOpen(true)
         setTimeout(() => {
-        setOpen(false)
-            
+            setOpen(false)
+
         }, 5000);
     }
 
@@ -75,8 +81,8 @@ const useLogin = () => {
     }, [])
 
     return <Login open={open} loginButtonDisabled={loginButtonDisabled} changeInput={changeInput} onSubmit={onSubmit} msg={msg}
-            colorSnackbar={colorSnackbar} />
-    
+        colorSnackbar={colorSnackbar} />
+
 }
 
 export default useLogin;
